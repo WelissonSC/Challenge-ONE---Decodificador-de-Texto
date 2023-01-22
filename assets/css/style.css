@@ -51,7 +51,7 @@
 }
 
 .textoDoMain::before {
-    content: url(/img/alertaicon.svg);
+    content: url(/assets/img/alertaicon.svg);
     margin-top: 2px;
     float: left;
     margin: 0 2px;
