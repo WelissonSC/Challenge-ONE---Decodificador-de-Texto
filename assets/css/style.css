@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxs;
+    background: #E5E5E5;
+}
+
+.logoAlura {
+    width: 120px;
+    height: 48px;
+    margin: 40px 0 0 40px;
+}
+
+.mainContainer {
+    width: 40%;
+    margin: 8% 50% 0 20%;
+}
+
+.lblDigite {
+    color: #0A3871;
+    position: absolute;
+    width: 40%;
+    height: 48px;
+    left: 21%;
+    top: 150px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+#campoTexto {
+    margin: 5px 0 0 20px;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-size: 20px;
+    border: none;
+}
+
+.textoDoMain {
+    font-family: 'Inter';
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    margin: 0 20px;
+}
+
+.textoDoMain::before {
+    content: url(/img/alertaicon.svg);
+    margin-top: 2px;
+    float: left;
+    margin: 0 2px;
+}
+
+.btnContainer {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0 0 20px;
+}
+
+.btnCriptografar {
+    background: #0A3871;
+    border-radius: 15px;
+    border: none;
+    width: 40%;
+    padding: 15px;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 16px;
+    box-shadow: 0px 2px 8px black;
+    margin: 0px 10% 0 5px;
+    cursor: pointer;
+}
+
+.btnDescriptografar {
+    background: #D8DFE8;
+    ;
+    border-radius: 15px;
+    border: 1px solid #0A3871;
+    width: 40%;
+    padding: 15px;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-size: 16px;
+    box-shadow: 0px 2px 8px black;
+    cursor: pointer;
+}
+
+.tradutorContainer {
+    background: #FFF;
+    width: 30%;
+    height: 79%;
+    float: right;
+    margin: -42% 2% 0px 50px;
+    padding: 35% 0% 5% 0%;
+    border-radius: 20px;
+    box-shadow: 1px 8px 17px -3px rgb(0 0 0 / 75%);
+}
+
+.imgArte {
+    width: 90%;
+    margin: -75% 0px 0 25px;
+    background-color: #FFF;
+}
+
+.titleTradutor {
+    font-family: 'Inter';
+    text-align: center;
+    font-size: 24px;
+    color: #343A40;
+    text-align: center;
+    background: #FFF;
+    margin-top: 5%;
+}
+
+.pTradutor {
+    font-family: 'Inter';
+    text-align: center;
+    text-align: center;
+    background: #FFF;
+    margin-top: 5%;
+}
+
+.footerContainer {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(10deg, rgba(2, 0, 36, 1) 0%, rgba(10, 56, 113, 1) 27%, rgba(0, 212, 255, 1) 100%);
+    margin-top: 10%;
+    padding: 8%;
+}
+
+.footerContainer p {
+    text-align: center;
+    background: none;
+    color: #FFF;
+    font-family: 'Inter';
+}
+
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
+}
+
+/* footer a:hover {
+    padding: 3px 0 3px 3px;
+} */
+
+.logoInsta {
+    background: none;
+    width: 45px;
+    height: 45px;
+    margin: 2% 0 0 44%;
+}
+
+.logoLink {
+    background: none;
+    width: 45px;
+    height: 45px;
+    margin-left: 25px;
+}
+
+/* parte de responsidvidade */
+
+/* reposividade de tela de 1280px */
+@media (max-width: 1280px) {
+    .tradutorContainer {
+        margin: -50% 2% 0px 50px;
+    }
+}
+
+/* reposividade tela de 768px */
+@media (max-width: 1060px) and (min-width: 375px) {
+    .logoAlura {
+        width: 35px;
+        height: 46px;
+    }
+
+    .lblDigite {
+        font-size: 2em;
+        margin: -3% 0px 0px -15%;
+    }
+
+
+    #campoTexto {
+        margin: 40px 0px 0px -25%;
+        width: 200%;
+        height: 0%;
+        /* border: 1px solid; */
+        line-height: 88%;
+        font-size: 2em;
+    }
+
+    .imgArte {
+        display: none;
+    }
+
+    .textoDoMain {
+        margin: 0% 0px 0px -25%;
+    }
+
+    .btnContainer {
+        width: 100%;
+        margin: 10px 0 0 100px;
+    }
+
+    .btnCriptografar {
+        margin: 2% 0% 0% -64%;
+        padding: 6%;
+        width: 100%;
+    }
+
+    .btnDescriptografar {
+        margin: -18.7% 0% 0% 54%;
+        padding: 6%;
+        width: 100%;
+        display: flex;
+    }
+
+    .tradutorContainer {
+        margin: 8% 7% 0% 0%;
+        padding: 9% 55% 4% 1%;
+    }
+
+    .titleTradutor {
+        background: none;
+        text-align: center;
+        margin: -10% -85% 0% 89%;
+        float: initial;
+    }
+
+    .pTradutor {
+        width: 280%;
+        background: none;
+        padding-bottom: 18%;
+    }
+
+    .footerContainer {
+        margin: 46% 0% 0% 0%;
+        padding-bottom: 18%;
+    }
+
+    .footerContainer p {
+        font-family: 'Inter';
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .logoInsta {
+        width: 2.5em;
+        height: 2.5em;
+        margin: 0% 0% 0% 42%;
+    }
+
+    .logoLink {
+        width: 2.5em;
+        height: 2.5em;
+        margin: 7% 0% 0% 4%;
+    }
+
+
+}
+
+/* responsividade voltade para mobile de widht 375px */
+
+@media (max-width: 480px) and (min-width: 375px) {
+    .headerContainer {
+        margin: 0% 0% 0% 0%;
+    }
+
+    .logoAlura {
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 9.5%;
+    }
+
+    .lblDigite {
+        width: 100%;
+        font-size: 35px;
+        margin: -3% 0% 0% -17%;
+    }
+
+    #campoTexto {
+        line-height: 90%;
+        margin-top: 65%;
+        font-size: 2em;
+    }
+
+    .textoDoMain {
+        width: 170%;
+        font-size: 13px;
+        margin: 0% 0% 0% -37%;
+    }
+
+    .btnCriptografar {
+        width: 220%;
+        padding: 16%;
+        margin: 8% 0% 0% -101%;
+        font-size: 25px;
+    }
+
+    .btnDescriptografar {
+        width: 220%;
+        padding: 16%;
+        font-size: 25px;
+        margin: 20% 0% 0% -100%;
+        display: block;
+    }
+
+    .tradutorContainer {
+        margin: 60% 6% 0% 0%;
+    }
+
+    .titleTradutor {
+        background: none;
+        margin: 5% 0% 0% 0%;
+        width: 280%;
+        font-size: 28px;
+    }
+
+    .pTradutor {
+        width: 253%;
+        font-size: 18px;
+        margin-left: 12%;
+    }
+
+    .footerContainer {
+        margin: 115% 0% 0% 0%;
+    }
+
+    .logoInsta {
+        margin: 12% 5% 0% 31%;
+    }
+
+}
+
+/* 
+Campo de resposta do html  */
+
+.resposta {
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    color: #0A3871;
+    font-family: 'Inter';
+    resize: none;
+    margin: -99% 0% 0% 5%;
+    display: flex;
+    width: 90%;
+    line-height: 108%;
+}
+
+.btnCopiar {
+    background: #0A3871;
+    border-radius: 15px;
+    border: 1px solid #FFF;
+    width: 35%;
+    padding: 15px;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 18px;
+    box-shadow: 0px 2px 8px black;
+    cursor: pointer;
+    margin: -6% 0% 0% 14%;
+}
+
+.limparBtn {
+    background: #D8DFE8;
+    border-radius: 15px;
+    border: 1px solid #0A3871;
+    width: 35%;
+    padding: 15px;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-size: 18px;
+    box-shadow: 0px 2px 8px black;
+    cursor: pointer;
+    margin: 3% 0% 0% 4%;
+}
+
+/* Reposividade da saida da informação */
+
+@media (max-width: 1060px) and (min-width: 375px) {
+    .resposta {
+        width: 265%;
+        margin: -25% 0% 0% 12%;
+        font-size: 2em;
+    }
+
+    .btnCopiar {
+        width: 108%;
+        margin: 0% 0% 0% 25%;
+        font-size: 1.5em;
+    }
+
+    .limparBtn {
+        width: 108%;
+        margin: -26% 0% 0% 154%;
+        font-size: 1.5em;
+        float: left;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 375px) {
+    .resposta {
+        font-size: 1.5em;
+    }
+
+    .btnCopiar {
+        width: 182%;
+        margin: -20% 0% 0% 49%;
+        font-size: 1.3em;
+        padding: 8%;
+    }
+
+    .limparBtn {
+        width: 182%;
+        margin: 22% 0% 0% 49%;
+        font-size: 1.3em;
+        padding: 8%;
+    }
+}
